@@ -1,0 +1,95 @@
+/* Task 2: border-box */
+* {
+  box-sizing: border-box;
+}
+
+/* Task 3: header and footer navy */
+header,
+footer {
+  background-color: navy;
+  color: white;
+  padding: 1rem;
+}
+
+/* Task 3: nav grey + flex row */
+nav {
+  background-color: grey;
+  display: flex;
+  gap: 1rem;
+  padding: 0.5rem 1rem;
+}
+
+nav a {
+  color: white;
+  text-decoration: none;
+}
+
+nav a:hover {
+  color: yellow;
+}
+
+/* Task 4: position relative */
+.hero {
+  position: relative;
+}
+
+/* Task 5 & 6: badge */
+.badge {
+  position: absolute;
+  top: 0.5rem;
+  right: 0.5rem;
+  background-color: red;
+  color: white;
+  padding: 0.25rem 0.5rem;
+  font-size: 0.75rem;
+  font-weight: bold;
+  border-radius: 3px;
+  z-index: 2;
+}
+
+/* Task 6: orange block */
+.behind {
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 80px;
+  height: 50px;
+  background-color: orange;
+  z-index: 1;
+}
+
+/* Task 7: specificity */
+.note {
+  color: red;
+}
+
+#status {
+  color: navy;
+}
+
+/* Task 8 & 9: grid + gap */
+.cards {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 1rem;
+  padding: 1rem;
+}
+
+.card {
+  background-color: lightgrey;
+  border: 1px solid #ccc;
+  padding: 1rem;
+  text-align: center;
+  border-radius: 4px;
+}
+
+section {
+  padding: 1rem;
+}
+
+/* Task 10: narrow window — one column below 600px */
+@media (max-width: 600px) {
+  .cards {
+    grid-template-columns: 1fr;
+  }
+}
